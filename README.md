@@ -1,10 +1,12 @@
 # Restaurant Search App
 
 This app can search restaurants in a fixed location by name of the dish and show some photos of the restaurant.
-Written in React Native and built with Expo CLI.
+* Written in React Native
+* Built with Expo CLI
+* Use Yelp API to get restaurant data
 
-![Main Screen](/screenshots/main.png)
-![Detail Screen](/screenshots/detail.png)
+![Main Screen](/screenshots/main.jpg)
+![Detail Screen](/screenshots/detail.jpg)
 
 ## Installation
 * Assuming that you have [Node 12 LTS](https://nodejs.org/en) or greater installed
