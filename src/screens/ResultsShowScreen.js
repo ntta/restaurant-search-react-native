@@ -5,6 +5,7 @@ import yelp from '../api/yelp';
 const ResultsShowScreen = ({ route }) => {
   const [result, setResult] = useState(null);
   const id = route.params.id;
+  const address = route.params.address.length > 0 ? route.params.address.join(', ') : null;
 
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
@@ -20,9 +21,11 @@ const ResultsShowScreen = ({ route }) => {
   }
 
   return (
-    <View>
-      <Text>{result.name}</Text>
+    <View style={styles.container}>
+      <Text style={styles.name}>{result.name}</Text>
+      {address ? <Text>{address}</Text> : null}
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={result.photos}
         keyExtractor={photo => photo}
         renderItem={({ item }) => {
@@ -39,9 +42,23 @@ const ResultsShowScreen = ({ route }) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...StyleSheet.absoluteFillObject,
+  },
   image: {
     height: 200,
     width: 300,
+    marginVertical: 10,
+    borderRadius: 4
+  },
+  name: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 10
   },
 });
 
