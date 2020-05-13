@@ -18,4 +18,7 @@ npm install -g expo-cli
 * Use Expo Client* ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) / [iOS](https://apps.apple.com/app/apple-store/id982107779)) to scan barcode from the metro bundler
 
 ## Snack
-This project will be uploaded to Snack soon.
+Try this app on Snack: https://snack.expo.io/@erron/restaurant-search
+
+## Change location
+The fixed location of the app is `melbourne`. To change the location, edit the location param in `src/hooks/useResults.js` line 15.
