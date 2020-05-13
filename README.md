@@ -5,8 +5,8 @@ This app can search restaurants in a fixed location by name of the dish and show
 * Built with Expo CLI
 * Use Yelp API to get restaurant data
 
-![Main Screen](/screenshots/main.jpg | width=100)
-![Detail Screen](/screenshots/detail.jpg | width=100)
+![Main Screen](/screenshots/main.jpg =100x)
+![Detail Screen](/screenshots/detail.jpg =100x)
 
 ## Installation
 * Assuming that you have [Node 12 LTS](https://nodejs.org/en) or greater installed
