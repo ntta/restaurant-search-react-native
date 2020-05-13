@@ -5,8 +5,7 @@ This app can search restaurants in a fixed location by name of the dish and show
 * Built with Expo CLI
 * Use Yelp API to get restaurant data
 
-<img src="/screenshots/main.jpg" width="100">
-<img src="/screenshots/detail.jpg" width="100">
+<img src="/screenshots/main.jpg" width="200"> <img src="/screenshots/detail.jpg" width="200">
 
 ## Installation
 * Assuming that you have [Node 12 LTS](https://nodejs.org/en) or greater installed
@@ -17,3 +16,6 @@ npm install -g expo-cli
 * Change directory to restaurant-search-react-native, run `npm install` to install all required packages
 * Run `npm start` to start metro bundler
 * Use Expo Client* ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) / [iOS](https://apps.apple.com/app/apple-store/id982107779)) to scan barcode from the metro bundler
+
+## Snack
+This project will be uploaded to Snack soon.
